@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>[Solution] – Delivery Plan</title>
+<!-- QLS document style (qls-doc-standard). Fill the [placeholders]; keep the styles. -->
+<style>
+body { font-family: Calibri, sans-serif; font-size: 11pt; color: #000000; }
+p { margin: 0 0 6pt 0; }
+.title { font-size: 24pt; font-weight: bold; color: #2D1B4E; margin-bottom: 4pt; }
+.subtitle { font-size: 13pt; color: #6B3FD4; margin-bottom: 12pt; }
+h1 { font-family: Calibri, sans-serif; font-size: 16pt; font-weight: bold; color: #2D1B4E; margin: 18pt 0 6pt 0; }
+h2 { font-family: Calibri, sans-serif; font-size: 13pt; font-weight: bold; color: #6B3FD4; margin: 14pt 0 6pt 0; }
+h3 { font-family: Calibri, sans-serif; font-size: 11pt; font-weight: bold; color: #2D1B4E; margin: 10pt 0 4pt 0; }
+table { border-collapse: collapse; width: 100%; margin: 4pt 0 10pt 0; }
+th { background: #2D1B4E; color: #FFFFFF; font-weight: bold; font-size: 10pt; text-align: left; border: 1px solid #BFB3D6; padding: 4pt; vertical-align: top; }
+td { font-size: 10pt; border: 1px solid #BFB3D6; padding: 4pt; vertical-align: top; }
+td.k { background: #EFEAF7; font-weight: bold; }
+table.small th, table.small td { font-size: 9pt; }
+li { margin-bottom: 3pt; }
+.owner { color: #555555; font-style: italic; }
+</style>
+</head>
+<body>
+
+<p class="title">[Solution name]</p>
+<p class="subtitle">Delivery plan – [one-line scope, e.g. exact steps from the vendor conversation to go-live]</p>
+
+<!-- Document control: first table, no header row (the converter skips header repeat for table 1) -->
+<table>
+<tr><td class="k" style="width:30%">Solution</td><td>[Solution and scope]</td></tr>
+<tr><td class="k">Document type</td><td>Delivery plan</td></tr>
+<tr><td class="k">Version / status</td><td>0.1 – Draft for review</td></tr>
+<tr><td class="k">Owner</td><td>[Owner]</td></tr>
+<tr><td class="k">Date</td><td>[DD Mon YYYY]</td></tr>
+<tr><td class="k">Delivery target</td><td>[Day DD Mon YYYY]</td></tr>
+<tr><td class="k">Source</td><td>[Requirement name, last updated date; solution export name]</td></tr>
+</table>
+
+<h1>1 Purpose</h1>
+<ul>
+<li>[Outcome 1]</li>
+<li>[Outcome 2]</li>
+</ul>
+<p>[How the work is done, in one paragraph.]</p>
+
+<h1>2 Terms used in this plan</h1>
+<table>
+<tr><th style="width:24%">Term</th><th>Meaning</th></tr>
+<tr><td class="k">[Term]</td><td>[Meaning in plain words]</td></tr>
+</table>
+
+<h1>3 Timeline at a glance</h1>
+<table>
+<tr><th style="width:6%">#</th><th style="width:26%">Stage</th><th style="width:20%">Dates</th><th style="width:20%">Who</th><th>Must be true before moving on</th></tr>
+<tr><td>1</td><td>Unblock</td><td>[dates]</td><td>[who]</td><td>[exit condition]</td></tr>
+</table>
+
+<h1>4 Delivery steps</h1>
+
+<h2>Stage 1 – Unblock ([dates])</h2>
+<ol start="1">
+<li><b>[Action.]</b> <span class="owner">([Owner])</span> [Detail.]</li>
+</ol>
+
+<!-- Decision table pattern: situation in words → action → what goes in each output column -->
+<h2>Stage 2 – [Build read-only part] ([dates])</h2>
+<ol start="2"><!-- set start to the next step number so numbering continues across stages -->
+<li><b>[Decide the action for every row]</b> using this table.</li>
+</ol>
+<table class="small">
+<tr><th style="width:24%">Situation</th><th style="width:10%">Action</th><th style="width:16%">Reason column</th><th style="width:26%">[Output group A]</th><th>[Output group B]</th></tr>
+<tr><td>[Situation in plain words]</td><td><b>[Action]</b></td><td>"[Example reason]"</td><td>[Exactly what is filled]</td><td>[Exactly what is filled, or All blank]</td></tr>
+</table>
+<!-- Continue numbering after a table with <ol start="next number"> -->
+
+<h1>5 Critical dates and risks</h1>
+<table>
+<tr><th style="width:18%">By</th><th style="width:40%">What must be done</th><th>If it slips</th></tr>
+<tr><td>[Day DD Mon]</td><td>[What]</td><td>[Consequence]</td></tr>
+</table>
+
+<h1>6 Questions answered from the existing configuration</h1>
+<table>
+<tr><th style="width:30%">Question</th><th>Answer and how the plan uses it</th></tr>
+<tr><td class="k">[Question]</td><td>[Answer, with the flow or file it came from]</td></tr>
+</table>
+
+<h1>7 Open decisions</h1>
+<table>
+<tr><th style="width:5%">#</th><th style="width:40%">Decision</th><th style="width:35%">Proposed</th><th>Decided by</th></tr>
+<tr><td>1</td><td>[Decision]</td><td>[Proposal]</td><td>[Role]</td></tr>
+</table>
+
+<h1>8 Change log</h1>
+<table>
+<tr><th style="width:18%">Date</th><th style="width:12%">Version</th><th>Change</th><th style="width:22%">By</th></tr>
+<tr><td>[DD Mon YYYY]</td><td>0.1</td><td>First draft of the delivery plan</td><td>[Name]</td></tr>
+</table>
+
+</body>
+</html>

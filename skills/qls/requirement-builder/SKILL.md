@@ -44,9 +44,19 @@ One Markdown file per requirement, the single source of truth:
    - Ask for **examples**: "Walk me through one real case from start to finish", "What happens to a student member who lapses and rejoins?" Examples expose rules people forget to state.
    - Where a sensible default exists, propose it as `Assumed` and ask for confirmation.
 3. Write every business rule as a numbered statement (`BR-R3.1: When a member's status becomes Lapsed, their MBA access is disabled.`). Ask the user to confirm the list.
-4. Write acceptance criteria as **Given / When / Then**, at least one per rule and one per failure case.
-5. After each round, show the count of resolved vs open items and list the open IDs.
-6. Call out contradictions and gaps directly (e.g. "rule 2 covers joining but nothing covers leaving").
+4. **Probe each rule for edge cases as soon as it's agreed**, while it's fresh. Don't save them for the end. Ask what happens when:
+   - data is missing, blank or in a different format;
+   - the same record appears twice, or the rule fires twice;
+   - it's undone or reversed (lapse, cancel, rejoin, delete);
+   - a person or system fails, rejects or times out, including after a retry;
+   - data changes between steps, or the process is re-run;
+   - a record on one side has no match on the other.
+
+   Record each answer in the edge cases table straight away (BR-R4). If an answer changes the rule, update the rule and tell the user.
+5. Write acceptance criteria as **Given / When / Then**, at least one per rule and one per failure case.
+6. After each round, show the count of resolved vs open items and list the open IDs.
+7. Call out contradictions and gaps directly (e.g. "rule 2 covers joining but nothing covers leaving").
+8. **Before the approval gate, review the whole edge case list once** against all the rules together, to catch cases that come from rules interacting (e.g. a re-run combined with a skip rule).
 
 Stay in business language. If the user volunteers technical detail (column names, flow steps), record it under **Technical notes for the build** and move on. Don't validate it here.
 
@@ -67,6 +77,7 @@ Stay in business language. If the user volunteers technical detail (column names
 
 - every applicable checklist item is `Confirmed` or `N/A`;
 - every business rule has at least one acceptance criterion;
+- the whole edge case list has been reviewed against all the rules together (Stage 2, step 8);
 - the solution type is decided;
 - the user has explicitly approved the requirement summary in this conversation.
 

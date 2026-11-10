@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/AI BOX/Claude AI/vscode/dataverse/solution/mba/QLSMBAIntegration_2026_06_12_8/**)",
+      "Bash(sort -k2)",
+      "Read(//c/AI BOX/Claude AI/vscode/dataverse/solution/mba/QLSMBAIntegration_2026_06_12_8/Workflows/**)",
+      "Bash(python -I \"C:/Users/MC710~1.UPR/AppData/Local/Temp/claude/c498cb35fc0c818c/58ad9a61-c84a-4263-9124-fe933610e511/scratchpad/flowdump.py\" IndividualMBAUpdateCurrentMembershipTypeStatusReas-*.json)",
+      "Bash(python -I \"C:/Users/MC710~1.UPR/AppData/Local/Temp/claude/c498cb35fc0c818c/58ad9a61-c84a-4263-9124-fe933610e511/scratchpad/flowdump.py\" IndividualMBAHTTP-ManualReprovisioningofanMBAAccou-*.json FORTESTOnly-*.json)",
+      "Bash(python -I -)",
+      "Bash(python -I \"C:/Users/MC710~1.UPR/AppData/Local/Temp/claude/c498cb35fc0c818c/58ad9a61-c84a-4263-9124-fe933610e511/scratchpad/flowdump.py\" IndividualMBAUpdateFirstNameLastNameUsernamePrefer-*.json IndividualMBAHTTP-GenerateRedirectURLmyQLS-*.json)",
+      "Read(//c/AI BOX/Claude AI/vscode/dataverse/**)",
+      "Bash(dotnet --list-sdks)",
+      "Read(//c/Users/m.uprety/.nuget/packages/**)",
+      "Bash(python -I \"C:/Users/MC710~1.UPR/AppData/Local/Temp/claude/c498cb35fc0c818c/6143322c-f927-4a38-9c2e-9dc62f97784b/scratchpad/auditlog2.py\" \"C:/AI BOX/Claude AI/vscode/dataverse/solution/mba/QLSMBAIntegration_2026_06_12_8/Workflows\")",
+      "Read(//c/AI BOX/Claude AI/vscode/dataverse/requirements/mba-existing-member-provisioning/**)",
+      "Bash(grep -ohiE '\\\\\\\\?\"\\(status|customer_status\\)\\\\\\\\?\"[[:space:]]*:[[:space:]]*\\\\\\\\?\"[A-Za-z]+' *.json)",
+      "Read(//c/AI BOX/Claude AI/vscode/**)",
+      "Bash(node -e \"require\\('docx'\\); console.log\\('docx ok', require\\('docx/package.json'\\).version\\)\")",
+      "Bash(npm root *)",
+      "PowerShell(try { python -c \"import docx; print\\('python-docx ok'\\)\" } catch { \"python-docx missing\" }; try { $w = New-Object -ComObject Word.Application -ErrorAction Stop; \"Word COM ok: $\\($w.Version\\)\"; $w.Quit\\(\\) } catch { \"Word COM unavailable\" }; try { dotnet --list-sdks } catch { \"no dotnet sdk\" })",
+      "PowerShell($s = \"C:\\\\Users\\\\MC710~1.UPR\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c498cb35fc0c818c\\\\8b63798a-770d-4aae-a176-1d06077f77fd\\\\scratchpad\"; $s = \\(Get-Item $s\\).FullName; & \"$s\\\\convert.ps1\" -Html \"$s\\\\plan.html\" -Docx \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\dataverse\\\\requirements\\\\mba-existing-member-provisioning\\\\QLS – MBA Reconciliation – Delivery Plan v0.1.docx\" -Pdf \"$s\\\\plan.pdf\")",
+      "PowerShell($s = \\(Get-Item \"C:\\\\Users\\\\MC710~1.UPR\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c498cb35fc0c818c\\\\8b63798a-770d-4aae-a176-1d06077f77fd\\\\scratchpad\"\\).FullName; $name = \"QLS \" + [char]0x2013 + \" MBA Reconciliation \" + [char]0x2013 + \" Delivery Plan v0.1.docx\"; & \"$s\\\\convert.ps1\" -Html \"$s\\\\plan.html\" -Docx \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\dataverse\\\\requirements\\\\mba-existing-member-provisioning\\\\$name\" -Pdf \"$s\\\\plan.pdf\")",
+      "PowerShell($s = \\(Get-Item \"C:\\\\Users\\\\MC710~1.UPR\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c498cb35fc0c818c\\\\8b63798a-770d-4aae-a176-1d06077f77fd\\\\scratchpad\"\\).FullName; $k = \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\ailearning\\\\skills\\\\qls\\\\delivery-plan\\\\references\\\\word\"; & \"$k\\\\convert-to-word.ps1\" -Html \"$k\\\\plan-template.html\" -Docx \"$s\\\\template-test.docx\" -Pdf \"$s\\\\template-test.pdf\" -HeaderTitle \\(\"Test \" + [char]0x2013 + \" Delivery Plan\"\\))",
+      "PowerShell($s = \\(Get-Item \"C:\\\\Users\\\\MC710~1.UPR\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c498cb35fc0c818c\\\\8b63798a-770d-4aae-a176-1d06077f77fd\\\\scratchpad\"\\).FullName; $k = \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\ailearning\\\\skills\\\\qls\\\\delivery-plan\\\\references\\\\word\"; $d = [char]0x2013; & \"$k\\\\convert-to-word.ps1\" -Html \"$s\\\\plan.html\" -Docx \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\dataverse\\\\requirements\\\\mba-existing-member-provisioning\\\\QLS $d MBA Reconciliation $d Delivery Plan v0.2.docx\" -Pdf \"$s\\\\plan.pdf\" -HeaderTitle \"MBA Reconciliation $d Delivery Plan\")",
+      "PowerShell($s = \\(Get-Item \"C:\\\\Users\\\\MC710~1.UPR\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c498cb35fc0c818c\\\\8b63798a-770d-4aae-a176-1d06077f77fd\\\\scratchpad\"\\).FullName; $k = \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\ailearning\\\\skills\\\\qls\\\\delivery-plan\\\\references\\\\word\"; $d = [char]0x2013; & \"$k\\\\convert-to-word.ps1\" -Html \"$s\\\\plan.html\" -Docx \"C:\\\\AI BOX\\\\Claude AI\\\\vscode\\\\dataverse\\\\requirements\\\\mba-existing-member-provisioning\\\\QLS $d MBA Reconciliation $d Delivery Plan v0.3.docx\" -Pdf \"$s\\\\plan.pdf\" -HeaderTitle \"MBA Reconciliation $d Delivery Plan\")"
+    ],
+    "additionalDirectories": [
+      "c:\\AI BOX\\Claude AI\\vscode\\dataverse\\requirements\\mba-existing-member-provisioning"
+    ]
+  }
+}
