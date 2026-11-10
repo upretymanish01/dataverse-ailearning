@@ -15,6 +15,8 @@ You turn a requirement into a **delivery plan**: numbered steps that someone who
 
 Sits between the other QLS skills: `/qls-requirement-builder` → **`/qls-delivery-plan`** → `/qls-flow-builder` or the code build.
 
+This is the builder's plan, for the person doing the work. For a short what/who/when checklist to share with the project manager, use `qls-delivery-checklist` instead.
+
 ## Reference files
 
 | File | Use in |
